@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For My Ni 💕</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+  /* each “page” section has its own background; body keeps the gradient in case images fail */
+  .page {
+    display: none;
+    min-height: 100vh;
+  }
+  .page.active { display: block; }
+  .page1 {
+    background: url('images/white roses.avif') center/cover no-repeat fixed;
+  }
+  .page2 {
+    background: url('images/cinnamon-roll.jpg') center/contain no-repeat scroll;
+  }
+  .page3 {
+    background: url('images/cinnamon-roll.jpg') center/contain no-repeat scroll;
+  }
+  @media (max-width: 768px) {
+    .container { padding: 30px 20px; }
+    h1 { font-size:2.4em; }
+    h2 { font-size:1.8em; }
+    .btn { padding: 12px 28px; font-size:1.1em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page page1 active" id="page1">
+  <div class="container">
+    <h1>Hey Birdie... 🐦💖</h1>
+    <p>Happy Women's Day, my perfect Ni. Shalini, the one who can never say No to me, even though it means "No" in your language! 😘</p>
+    <img src="images/solo-ni.jpg" alt="My funny Ni" class="photo">
+    <div class="question">A little questionnaire for the most amazing woman I know...</div>
+    <p>Question 1: Are you straightforward, honest, strong with your principles and ideologies, very disciplined?</p>
+    <button class="btn" onclick="showPage(2)">Yes, and I love that about you</button>
+    <button class="btn" id="no-btn-1">No</button>
+    <p>I love you a lot, Ni. The littlest things you do make me incredibly happy – like your smile, your laugh, or just being around you. I don't really need anything from you; your presence is enough. Thank you for putting up with me, the unplanned, imperfect thing in your perfectly organized life. You're strong, independent, and admirable, and I love you for who you are.</p>
+  </div>
+</div>
+
+<div class="page page2" id="page2">
+  <div class="container">
+    <h2>You’re my favorite unplanned thing</h2>
+    <p>Before me, you were literally perfection — everything on time, everything in place. Then I came along… the only chaotic, imperfect part of your life. And somehow, you still choose to deal with me every day. Thank you for putting up with me, Ni. ❤️</p>
+    <img src="images/child-ni.jpg" alt="Cute small Ni" class="photo">
+    <img src="images/first-date.jpg" alt="Gorgeous Ni on our first date" class="photo">
+    <p>I don’t need anything from you… except maybe more of your smiles, more late-night talks, more of you stealing my hoodies, more cinnamon roll mornings together.</p>
+    <p class="question">Question 2: Are you strong in communication, responsible, admirable, bold, and do you never back down?</p>
+    <button class="btn btn-yes" onclick="showPage(3)">Yes, and that's why I admire you</button>
+    <button class="btn" id="no-btn-2">No</button>
+    <p>You're straightforward, honest, disciplined, proud in the most adorable way, and you put in effort even when others don't. You don't show your weak side, but I love you for whatever you are. The littlest things from you make me wanna cry with happiness.</p>
+  </div>
+</div>
+
+<div class="page page3" id="page3">
+  <div class="container">
+    <h1>Happy Women's Day, Shalini! 🌸✨</h1>
+    <h2>My strong, beautiful, perfect Birdie… my Ni</h2>
+    <img src="images/sun-kissed.jpg" alt="Sun kissed us" class="photo">
+    <img src="images/fav-pic.jpg" alt="Our fav pic" class="photo">
+    <p class="big-heart">I LOVE YOU LOADS <span class="heart">❤️❤️❤️</span></p>
+    <p>Thank you for never saying No to me… even when I probably deserve it sometimes 😅 You make every single day better. Here's to more strawberries, more cinnamon rolls, and more us. 🥐🍓</p>
+    <p>Ni, I like you for whatever you are. You take control of my body just by existing; I lose my shit just being around you. I'm grateful to you in so many ways. You're my first for everything – my first real love, my first to feel this deeply. For me, you're the person I didn't "date" first, but my first in everything. I've known you for 2.5 years, liked you for exactly 1 year, and we've been in a relationship for 6 months. This is the first time I truly feel things; I realize how important someone's presence is. Your cake for my Valentine's, your letter – small things from you make me go mad. I don't expect anything, but even the tiniest thing makes me wanna cry. I usually cry once a year, but since you came into my life, I've been more open to my feelings. I like talking to you, I just wanna be with you, I just wanna stare at you… that's all.</p>
+    <p>Forever your biggest fan,<br>Arjun</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
