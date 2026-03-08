@@ -13,7 +13,7 @@ function setupNoButton() {
     });
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      alert("Hehe, you can never say No to me, Birdie! 😏 Try Yes instead~");
+      alert("Muhahahaha, you can never say No to me, Birdie! 😏 Try your default response instead~");
     });
   });
 }
