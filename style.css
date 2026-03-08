@@ -115,9 +115,9 @@ p {
 .page.active { display: block; }
 
 /* backgrounds for each section using the images you provided */
-.page1 { background: url('images/white roses.avif') center/cover no-repeat fixed; }
-.page2 { background: url('images/white roses.avif') center/cover no-repeat fixed; }
-.page3 { background: url('images/white roses.avif') center/cover no-repeat fixed; }
+.page1 { background: url('images/white roses.avif') center/cover no-repeat scroll; }
+.page2 { background: url('images/white roses.avif') center/cover no-repeat scroll; }
+.page3 { background: url('images/white roses.avif') center/cover no-repeat scroll; }
 
 /* mobile adjustments for iPhone 13 and similar */
 @media (max-width: 768px) {
@@ -125,6 +125,4 @@ p {
   h1 { font-size: 2.4em; }
   h2 { font-size: 1.8em; }
   .btn { padding: 12px 28px; font-size: 1.1em; }
-  /* change background attachment to scroll for mobile to avoid issues */
-  .page1, .page2, .page3 { background-attachment: scroll; }
 }

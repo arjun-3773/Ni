@@ -1,5 +1,6 @@
 // navigation between page sections
 function showPage(num) {
+  alert('Switching to page ' + num); // debug
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   const el = document.getElementById(`page${num}`);
   if (el) el.classList.add('active');
