@@ -21,9 +21,10 @@ function setupNoButton() {
 window.onload = () => {
   setupNoButton();
   showPage(1);
-  // position hearts randomly
+  // position hearts randomly and dynamically
   document.querySelectorAll('.heart').forEach((heart, i) => {
     heart.style.left = Math.random() * 100 + '%';
-    heart.style.animationDelay = Math.random() * 6 + 's';
+    heart.style.animationDelay = Math.random() * 4 + 's'; // random delay up to 4s
+    heart.style.animationDuration = (4 + Math.random() * 2) + 's'; // vary duration
   });
 };

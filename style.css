@@ -106,7 +106,7 @@ p {
   position: absolute;
   color: #ff69b4;
   font-size: 2em;
-  animation: float 6s infinite linear;
+  animation: float 4s infinite linear; /* faster animation */
 }
 
 @keyframes float {
@@ -146,4 +146,6 @@ p {
   h1 { font-size: 2.4em; }
   h2 { font-size: 1.8em; }
   .btn { padding: 12px 28px; font-size: 1.1em; }
+  /* change background attachment to scroll for mobile to avoid issues */
+  .page1, .page2, .page3 { background-attachment: scroll; }
 }
