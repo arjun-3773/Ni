@@ -22,11 +22,12 @@ body {
 
 .container {
   max-width: 700px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.8); /* black background with opacity */
   padding: 40px 30px;
-  border-radius: 20px;
+  border-radius: 10px; /* shrunk radius */
   box-shadow: 0 10px 40px rgba(200, 180, 220, 0.2);
   border: 1px solid #eee;
+  color: #fff; /* white text for dark background */
 }
 
 h1, h2 {
@@ -136,13 +137,13 @@ p {
 
 /* backgrounds for each section using the images you provided */
 .page1 { background: url('images/white roses.avif') center/cover no-repeat fixed; }
-.page2 { background: url('images/cinnamon-roll.jpg') center/contain no-repeat scroll; }
-.page3 { background: url('images/cinnamon-roll.jpg') center/contain no-repeat scroll; }
+.page2 { background: url('images/white roses.avif') center/cover no-repeat fixed; }
+.page3 { background: url('images/white roses.avif') center/cover no-repeat fixed; }
 
-/* mobile adjustments */
+/* mobile adjustments for iPhone 13 and similar */
 @media (max-width: 768px) {
-  .container { padding: 30px 20px; }
-  h1 { font-size:2.4em; }
-  h2 { font-size:1.8em; }
-  .btn { padding: 12px 28px; font-size:1.1em; }
+  .container { padding: 30px 20px; max-width: 90%; }
+  h1 { font-size: 2.4em; }
+  h2 { font-size: 1.8em; }
+  .btn { padding: 12px 28px; font-size: 1.1em; }
 }
